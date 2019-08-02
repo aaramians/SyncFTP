@@ -68,8 +68,8 @@ ftpURL = ''
 HistoryFiles = {}
 SyncFiles = {}
 
-
-from settings import *
+if os.path.exists('settings.py'):
+    from settings import *
 
 lwd = None
 Sync = True
